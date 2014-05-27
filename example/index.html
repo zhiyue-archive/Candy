@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Candy - Chats are not dead yet</title>
+	<link rel="shortcut icon" href="../res/img/favicon.png" type="image/gif" />
+	<link rel="stylesheet" type="text/css" href="../res/default.css" />
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../libs/libs.min.js"></script>
+	<script type="text/javascript" src="../candy.min.js"></script>
+	<script type="text/javascript" src="../candy.fix2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+				Candy.init("http://example.com:5280/http-bind/", {
+				core: {
+					debug: true,
+					autojoin: ['猫聊test@example.com']
+				},
+				view: { resources: '../res/',language: 'cn' }
+				
+			});
+
+			Candy.Core.connect();
+
+			/**
+			 * Thanks for trying Candy!
+			 *
+			 * If you need more information, please see here:
+			 *   - Setup instructions & config params: http://candy-chat.github.io/candy/#setup
+			 *   - FAQ & more: https://github.com/candy-chat/candy/wiki
+			 *
+			 * Mailinglist for questions:
+			 *   - http://groups.google.com/group/candy-chat
+			 *
+			 * Github issues for bugs:
+			 *   - https://github.com/candy-chat/candy/issues
+			 */
+		});
+	</script>
+</head>
+<body>
+	<div id="candy"></div>
+</body>
+</html>
